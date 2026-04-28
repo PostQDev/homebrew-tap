@@ -5,21 +5,21 @@
 class Postq < Formula
   desc "PostQ CLI — quantum-risk scanning for TLS, certs, and cloud crypto."
   homepage "https://postq.dev"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PostQDev/postq-cli/releases/download/v0.4.0/postq_0.4.0_darwin_amd64.tar.gz"
-      sha256 "b1b73c0bba55c052a5316f100c68317f22eee111c8c42b2341c2ce0d2a7e189a"
+      url "https://github.com/PostQDev/postq-cli/releases/download/v0.5.0/postq_0.5.0_darwin_amd64.tar.gz"
+      sha256 "a9b4e330ef998e6f903d4726a3c44975f44c97ebdb19885202101f5987df4de4"
 
       define_method(:install) do
         bin.install "postq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PostQDev/postq-cli/releases/download/v0.4.0/postq_0.4.0_darwin_arm64.tar.gz"
-      sha256 "8df72da2bc61b3a1160e6b3ddee3ccd6b12f330e3f3bbfdaa1a24cf67db73b2d"
+      url "https://github.com/PostQDev/postq-cli/releases/download/v0.5.0/postq_0.5.0_darwin_arm64.tar.gz"
+      sha256 "ca02d1cfbd25ce323fdfce3c32322440713087c26b3974d9495b9b049519ae93"
 
       define_method(:install) do
         bin.install "postq"
@@ -29,15 +29,15 @@ class Postq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PostQDev/postq-cli/releases/download/v0.4.0/postq_0.4.0_linux_amd64.tar.gz"
-      sha256 "8c5e5c5bdcc1b402f58629c206f2bded9244d151237610d4d0747ccc222a3b8e"
+      url "https://github.com/PostQDev/postq-cli/releases/download/v0.5.0/postq_0.5.0_linux_amd64.tar.gz"
+      sha256 "84ae5fb870d787766a859417b8fc25eb994ee1a995bc8f4c83be5e67303439f6"
       define_method(:install) do
         bin.install "postq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PostQDev/postq-cli/releases/download/v0.4.0/postq_0.4.0_linux_arm64.tar.gz"
-      sha256 "50de19230ea90ddffc6bf5e872e9b6ddf0378fb1538278c5e1d9a2c085c2e212"
+      url "https://github.com/PostQDev/postq-cli/releases/download/v0.5.0/postq_0.5.0_linux_arm64.tar.gz"
+      sha256 "ffa4665e3e8687b2f58ce6fcf7af9ba1c4e21e518f52aab2b5867a275985af34"
       define_method(:install) do
         bin.install "postq"
       end
